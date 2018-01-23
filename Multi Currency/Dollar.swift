@@ -17,7 +17,7 @@ class Dollar {
     }
     
     func times(multipler: Int) {
-        self.amount = self.amount * multipler
+        self.amount *= multipler
     }
     
     
