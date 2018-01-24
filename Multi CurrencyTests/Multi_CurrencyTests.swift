@@ -34,15 +34,11 @@ class Multi_CurrencyTests: XCTestCase {
     }
     
     func testMoltiplication() {
-        
+  
         let five: Dollar = Dollar.init(amount: 5)
-        var product: Dollar
         
-        product = five.times(multipler: 2)
-        assert(10 == product.amount)
-        product = five.times(multipler: 3)
-        assert(15 == product.amount)
-    
+        XCTAssertEqual(Dollar.init(amount: 10), five.times(multipler: 2))
+        XCTAssertEqual(Dollar.init(amount: 15),five.times(multipler: 3))
     }
 
     func testEquality() {
