@@ -38,7 +38,15 @@ class Multi_CurrencyTests: XCTestCase {
         let five: Dollar = Dollar.init(amount: 5)
         
         XCTAssertEqual(Dollar.init(amount: 10), five.times(multipler: 2))
-        XCTAssertEqual(Dollar.init(amount: 15),five.times(multipler: 3))
+        XCTAssertEqual(Dollar.init(amount: 15), five.times(multipler: 3))
+    }
+
+    func testFrancMoltiplication() {
+        
+        let five: Franc = Franc.init(amount: 5)
+        
+        XCTAssertEqual(Franc.init(amount: 10), five.times(multipler: 2))
+        XCTAssertEqual(Franc.init(amount: 15), five.times(multipler: 3))
     }
 
     func testEquality() {
