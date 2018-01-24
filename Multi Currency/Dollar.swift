@@ -21,5 +21,8 @@ class Dollar {
         return returnedDollarValue
     }
     
-    
+    func equals(dollar: Dollar) -> Bool {
+        let newDollar : Dollar = dollar
+        return self.amount == newDollar.amount
+    }
 }
