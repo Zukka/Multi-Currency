@@ -36,11 +36,12 @@ class Multi_CurrencyTests: XCTestCase {
     func testMoltiplication() {
         
         let five: Dollar = Dollar.init(amount: 5)
-        five.amount = 5
-        five.times(multipler: 2)
-        assert(10 == five.amount)
-        five.times(multipler: 3)
-        assert(15 == five.amount)
+        var product: Dollar
+        
+        product = five.times(multipler: 2)
+        assert(10 == product.amount)
+        product = five.times(multipler: 3)
+        assert(15 == product.amount)
     
     }
 
