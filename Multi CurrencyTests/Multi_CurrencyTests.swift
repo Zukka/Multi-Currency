@@ -45,4 +45,7 @@ class Multi_CurrencyTests: XCTestCase {
     
     }
 
+    func testEquality() {
+        XCTAssertTrue(Dollar.init(amount: 5).equals(Dollar.init(amount: 5).amount))
+    }
 }
