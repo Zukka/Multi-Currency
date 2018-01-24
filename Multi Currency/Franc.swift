@@ -20,7 +20,7 @@ class Franc: Equatable {
     }
     
     func times(multipler: Int) -> Franc {
-        let returnedFrancValue: Franc = Franc.init(amount: 5)
+        let returnedFrancValue: Franc = Franc.init(amount: self.amount * multipler)
         return returnedFrancValue
     }
     
