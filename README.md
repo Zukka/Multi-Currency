@@ -1,3 +1,3 @@
 # Multi-Currency
 
-From Test-Driven Developement by Example I want to solve the problem using Swift and UTest.
+From Test-Driven Developement by Example I want to solve the problems and the exercises using Swift and UTest.
