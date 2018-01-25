@@ -11,7 +11,7 @@ import Foundation
 class Franc: Money {
     
     override init(amount: Int, currency: String) {
-        super.init(amount: amount, currency: "CHF")
+        super.init(amount: amount, currency: CurrencyShort.franc)
     }
     
 }

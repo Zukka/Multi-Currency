@@ -18,11 +18,11 @@ class Money: Equatable {
     }
     
     static func dollar(amount: Int) -> Dollar {
-        return Dollar.init(amount: amount, currency: "USD")
+        return Dollar.init(amount: amount, currency: CurrencyShort.dollar)
     }
     
     static func franc(amount: Int) -> Franc {
-        return Franc.init(amount: amount, currency: "CHF")
+        return Franc.init(amount: amount, currency: CurrencyShort.franc)
     }
     
     init(amount: Int, currency: String) {

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B62985C52018D0B80073A8D7 /* Franc.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62985C42018D0B80073A8D7 /* Franc.swift */; };
 		B62985C72018D4370073A8D7 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62985C62018D4370073A8D7 /* Money.swift */; };
+		B62985C9201A4D900073A8D7 /* CurrencyConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62985C8201A4D900073A8D7 /* CurrencyConstants.swift */; };
 		B6CA472A201745BE00EE3DC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CA4729201745BE00EE3DC7 /* AppDelegate.swift */; };
 		B6CA472C201745BE00EE3DC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CA472B201745BE00EE3DC7 /* ViewController.swift */; };
 		B6CA472F201745BE00EE3DC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6CA472D201745BE00EE3DC7 /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		B62985C42018D0B80073A8D7 /* Franc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Franc.swift; sourceTree = "<group>"; };
 		B62985C62018D4370073A8D7 /* Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
+		B62985C8201A4D900073A8D7 /* CurrencyConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConstants.swift; sourceTree = "<group>"; };
 		B6CA4726201745BE00EE3DC7 /* Multi Currency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Multi Currency.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6CA4729201745BE00EE3DC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6CA472B201745BE00EE3DC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				B6CA4729201745BE00EE3DC7 /* AppDelegate.swift */,
+				B62985C8201A4D900073A8D7 /* CurrencyConstants.swift */,
 				B6CA474B20174DE800EE3DC7 /* Dollar.swift */,
 				B62985C62018D4370073A8D7 /* Money.swift */,
 				B62985C42018D0B80073A8D7 /* Franc.swift */,
@@ -208,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B62985C9201A4D900073A8D7 /* CurrencyConstants.swift in Sources */,
 				B62985C52018D0B80073A8D7 /* Franc.swift in Sources */,
 				B62985C72018D4370073A8D7 /* Money.swift in Sources */,
 				B6CA472C201745BE00EE3DC7 /* ViewController.swift in Sources */,
