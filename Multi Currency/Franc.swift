@@ -8,24 +8,11 @@
 
 import Foundation
 
-class Franc: Equatable {
-    static func ==(lhs: Franc, rhs: Franc) -> Bool {
-        return lhs.amount == rhs.amount
-    }
-    
-    private var amount: Int
-    
-    init(amount: Int) {
-        self.amount = amount
-    }
+class Franc: Money {
     
     func times(multipler: Int) -> Franc {
         let returnedFrancValue: Franc = Franc.init(amount: self.amount * multipler)
         return returnedFrancValue
     }
     
-    func equals(franc: Franc) -> Bool {
-        let newFranc : Franc = franc
-        return self.amount == newFranc.amount
-    }
 }
