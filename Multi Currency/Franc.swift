@@ -10,8 +10,8 @@ import Foundation
 
 class Franc: Money {
     
-    override func currency() -> String {
-        return "CHF"
+    override init(amount: Int, currency: String) {
+        super.init(amount: amount, currency: "CHF")
     }
     
 }
