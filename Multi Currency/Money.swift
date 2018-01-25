@@ -22,6 +22,8 @@ class Money: Equatable {
     
     func equals(money: Money) -> Bool {
         let newMoney : Money = money
-        return self.amount == newMoney.amount
+        let firstObjectClassName = String(describing: type(of: self))
+        let secondObjectClassName = String(describing: type(of: newMoney))
+        return self.amount == newMoney.amount && firstObjectClassName.elementsEqual(secondObjectClassName)
     }
 }
