@@ -10,6 +10,8 @@ import Foundation
 
 class Dollar: Money {
     
-   
+    override func currency() -> String {
+        return "USD"
+    }
     
 }
