@@ -42,8 +42,8 @@ class Money: Equatable {
         return returnedMoneyValue
     }
     
-    func plus(addend: Money) -> Money {
-        return Money.init(amount: amount + addend.amount, currency: currency)
+    func plus(addend: Money) -> Sum {
+        return Sum.init(augend: self, addend: addend)
     }
 }
 

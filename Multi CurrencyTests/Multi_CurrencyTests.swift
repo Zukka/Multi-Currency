@@ -68,10 +68,9 @@ class Multi_CurrencyTests: XCTestCase {
     
     func testSimpleAddiction() {
         
-        let five: Money = Money.dollar(amount: 5)
-        let sum: Money = five.plus(addend: five)
+        let sum: Sum = Sum.init(augend: Money.dollar(amount: 3), addend: Money.dollar(amount: 4))
         let bank = Bank.init()
         let reduced: Money = bank.reduce(source: sum, currency: CurrencyShort.dollar)
-        XCTAssertEqual(Money.dollar(amount: 10), reduced)
+        XCTAssertEqual(Money.dollar(amount: 7), reduced)
     }
 }
