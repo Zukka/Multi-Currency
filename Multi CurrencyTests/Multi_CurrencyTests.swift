@@ -65,4 +65,13 @@ class Multi_CurrencyTests: XCTestCase {
     func testDifferentClassEquality() {
         XCTAssertTrue(Money.franc(amount: 10).equals(money: Franc.init(amount: 10, currency: "CHF")))
     }
+    
+    func testSimpleAddiction() {
+        
+        let five: Money = Money.dollar(amount: 5)
+        let sum: Money = five.plus(addend: five)
+        let bank = Bank.init()
+        let reduced: Money = bank.reduce(source: sum, currency: CurrencyShort.dollar)
+        XCTAssertEqual(Money.dollar(amount: 10), reduced)
+    }
 }
