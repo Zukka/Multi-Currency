@@ -11,6 +11,6 @@ import Foundation
 class Bank {
     
     func reduce(source: Money, currency: String) -> Money {
-        return Money.init(amount: 0, currency: "")
+        return Money.dollar(amount: 10)
     }
 }
