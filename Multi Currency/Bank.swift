@@ -10,7 +10,12 @@ import Foundation
 
 class Bank {
     
-    func reduce(source: Sum, currency: String) -> Money {
-        return source.reduce(currency: currency)
+    func reduce(source: AnyObject, currency: String) -> Money {
+        if (source is Sum ) {
+            let sourceSum: Sum = source as! Sum
+            return sourceSum.reduce(currency: currency)
+        } else {
+            return source as! Money
+        }
     }
 }

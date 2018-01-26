@@ -73,4 +73,10 @@ class Multi_CurrencyTests: XCTestCase {
         let reduced: Money = bank.reduce(source: sum, currency: CurrencyShort.dollar)
         XCTAssertEqual(Money.dollar(amount: 7), reduced)
     }
+    
+    func testReduceMoney() {
+        let bank = Bank.init()
+        let result: Money = bank.reduce(source: Money.dollar(amount: 1), currency: CurrencyShort.dollar)
+        XCTAssertEqual(Money.dollar(amount: 1), result)
+    }
 }
